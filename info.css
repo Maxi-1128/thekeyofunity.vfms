@@ -90,7 +90,7 @@ body {
   gap: 20px;
   align-items: center;
   box-shadow: 0 6px 6px rgba(2,6,23,0.6);
-  border: 1px solid rgba(255,255,255,0.03);
+  border: 15px solid rgba(255,255,255,0.03);
 }
 
 .poster {
@@ -185,5 +185,6 @@ footer {
     height: 200px;
   }
 }
+
 
 
