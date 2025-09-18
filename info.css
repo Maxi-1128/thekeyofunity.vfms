@@ -115,6 +115,21 @@ body {
   mix-blend-mode: overlay;
 }
 
+.poster-container {
+  display: flex;
+  justify-content: center;  /* centers the image */
+  align-items: center;
+  padding: 1rem;
+}
+
+.poster {
+  max-width: 200px;  /* keeps it from being too big */
+  height: auto;      /* keeps the right proportions */
+  border-radius: 8px; /* optional: rounded edges */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* optional: shadow */
+}
+
+
 .title-block {
   flex: 1;
 }
@@ -170,3 +185,4 @@ footer {
     height: 200px;
   }
 }
+
