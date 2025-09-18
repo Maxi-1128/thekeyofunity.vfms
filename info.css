@@ -83,39 +83,50 @@ body {
 
 /* Hero Section */
 .hero {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 16px;
-  padding: 28px;
   display: flex;
-  gap: 20px;
   align-items: center;
-  box-shadow: 0 6px 6px rgba(2,6,23,0.6);
+  gap: 20px;
+  padding: 28px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 6px rgba(2,6,23,0.6);
 }
 
+/* poster container keeps spacing consistent */
+.poster-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* single .poster rule — no duplicate definitions */
 .poster {
-  width: 170px;
+  max-width: 180px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
+  display: block;
   box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-  display: block; /* no flex needed */
+  position: relative;
 }
 
-
+/* subtle overlay (optional) */
 .poster::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 10px;
+  pointer-events: none;
   background: linear-gradient(180deg, rgba(176,139,87,0.06), transparent);
   mix-blend-mode: overlay;
 }
 
-.poster-container {
-  display: flex;
-  justify-content: center;  /* centers the image */
-  align-items: center;
-  padding: 1rem;
+/* responsive fallback */
+@media (max-width: 600px) {
+  .hero { flex-direction: column; text-align: center; }
+  .poster-container { padding: 0; }
 }
 
 
