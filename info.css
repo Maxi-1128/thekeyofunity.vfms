@@ -89,7 +89,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
-  box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+  box-shadow: 0 6px 6px rgba(2,6,23,0.6);
   border: 1px solid rgba(255,255,255,0.03);
 }
 
@@ -110,7 +110,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 8px;
+  border-radius: 10px;
   background: linear-gradient(180deg, rgba(176,139,87,0.06), transparent);
   mix-blend-mode: overlay;
 }
@@ -125,7 +125,7 @@ body {
 .poster {
   max-width: 200px;  /* keeps it from being too big */
   height: auto;      /* keeps the right proportions */
-  border-radius: 8px; /* optional: rounded edges */
+  border-radius: 10px; /* optional: rounded edges */
   box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* optional: shadow */
 }
 
@@ -185,4 +185,5 @@ footer {
     height: 200px;
   }
 }
+
 
